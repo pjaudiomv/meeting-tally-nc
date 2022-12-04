@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <Container maxWidth="lg">
-        <HeaderTitle>CRNA Meeting Tally</HeaderTitle>
+        <HeaderTitle>NCRNA Meeting Tally</HeaderTitle>
       </Container>
     </HeaderContainer>
   );
