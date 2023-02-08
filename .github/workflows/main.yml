@@ -8,14 +8,9 @@ jobs:
         run: |
           mv "${{ runner.tool_cache }}" "${{ runner.tool_cache }}.old"
           mkdir -p "${{ runner.tool_cache }}"
-      - name: Setup Node 10
-        uses: actions/setup-node@v3
-        with:
-          node-version: 10.x
-      - name: Setup Node 12
-        uses: actions/setup-node@v3
-        with:
-          node-version: 12.x
+      - name: checkout 🛒
+        uses: actions/checkout@v3
+
       - name: Archive tool cache
         run: |
           cd "${{ runner.tool_cache }}"
